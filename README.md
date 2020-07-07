@@ -4,3 +4,6 @@
   - The ARM template "RGTemplate.json" is to create number of resource groups in azure based on the count of locations provided in the array of "location" parameter.
   - i have used AZ CLI to deploy this JSON template.
   - Output attached in question1-output file.
+  - The same can bbe implemented using Azure powershell cmdlets to deploy template and also use terraform with same copyindex approach to create multiple resource groups.
+  
+2. 
