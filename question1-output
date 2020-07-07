@@ -1,0 +1,62 @@
+PS /home/a7cf1184-7b1e-4d1f-b134-e415877b> az deployment create --name test --template-file "/home/a7cf1184-7b1e-4d1f-b134-e415877b/RGTemplate.json" --location eastus
+This command has been deprecated and will be removed in a future release. Use 'deployment sub create' instead.
+{- Finished ..
+  "id": "/subscriptions/ad6178cf-a60d-413b-818f-56a735de38b5/providers/Microsoft.Resources/deployments/test",
+  "location": "eastus",
+  "name": "test",
+  "properties": {
+    "correlationId": "473cb91a-c5f0-4fbf-b4b6-25adc4a97878",
+    "debugSetting": null,
+    "dependencies": [],
+    "duration": "PT1.4942708S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/ad6178cf-a60d-413b-818f-56a735de38b5/resourceGroups/my-test-candidate-eastus"
+      },
+      {
+        "id": "/subscriptions/ad6178cf-a60d-413b-818f-56a735de38b5/resourceGroups/my-test-candidate-westus"
+      }
+    ],
+    "outputs": {},
+    "parameters": {
+      "location": {
+        "type": "Array",
+        "value": [
+          "eastus",
+          "westus"
+        ]
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "eastus",
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "resourceGroups"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "4995360460550719114",
+    "templateLink": null,
+    "timestamp": "2020-07-07T19:46:18.748057+00:00"
+  },
+  "type": "Microsoft.Resources/deployments"
+}
+PS /home/a7cf1184-7b1e-4d1f-b134-e415877b>
