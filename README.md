@@ -6,4 +6,5 @@
   - Output attached in question1-output file.
   - The same can bbe implemented using Azure powershell cmdlets to deploy template and also use terraform with same copyindex approach to create multiple resource groups.
   
-2. 
+2. Migration approach details added to Queastion -2 : Approach file.
+VM terraform files are added to VM Terraform files folder
