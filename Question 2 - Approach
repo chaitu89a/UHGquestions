@@ -3,11 +3,11 @@ As part of this migration effort i would do the following stpes in Azure
 - My plan involves to have two Azure load balancers in front of data tier and app tier and Azure App Gateway in front of web tier, which will be exposed to internet for egress and ingress into
 my Azure vNets.
 - Also i will be configuring a site-to-site VPN (for small workkloads) setup and express route (for huge workloads) to establish datacenter to Azure connection securely
-- To configure site-to-site VPN i will be using VPN gateway in Azure with a separate gateway sunet in my vNet and then configure local netwrok gateway to establich site-to-site connection
+- To configure site-to-site VPN i will be using VPN gateway in Azure with a separate gateway subnet in my vNet and then configure local netwrok gateway to establich site-to-site connection
 from Azure to on-prem network using on-prem shared key
 
-For migration part, i will be using Azure Migrate which tools integrated for server assessment, migrate and data migrate.
+For migration part, i will be using Azure Migrate which has variuos tools integrated for server assessment, migrate task and data migrate.
 - Create projects in Azure migrate for the initial assesmment and readiness activity
 - As part of assessment, using server assessment tool by deploying the appliance on on-prem VMWare/Hyper-V servers and analyze the sizing and compatibility of the entire 
 on-prem workloads 
-- After detailed analysis of workloads about sizing, compute and other components, we make the project readuy for migrate.
+- After detailed analysis of workloads about sizing, compute and other components, we make the Azure migrate project ready for next step which is the migration, of oth VMs and Data.
